@@ -36,7 +36,7 @@
     <div id="mid">
         <h2>ZAMÓWIONE AUTA NUMERAMI TELEFONU KLIENTÓW</h2>
         <?php
-        $kw3 = mysqli_query($conn, "SELECT `samochody`.`id`,`marka`,`model`,`telefon` FROM `samochody` INNER JOIN `zamowienia` ON `samochody`.`id`=`zamowienia`.`samochody_id`;");
+        $kw3 = mysqli_query($conn, "SELECT `samochody`.`id`,`model`,`telefon` FROM `samochody` INNER JOIN `zamowienia` ON `samochody`.`id`=`zamowienia`.`samochody_id`;");
         foreach ($kw3 as $a) {
             foreach ($a as $row) {
                 echo $row . "&nbsp";
